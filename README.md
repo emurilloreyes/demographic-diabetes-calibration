@@ -1,12 +1,13 @@
 # Demographic-Wise Calibration of Diabetes Risk Predictions
 
 ## Overview
-The aim of this project is to investigate whether machine learning models trained to predict diabetes risk are equally well-calibrated across different demographic groups. For example, a predicted risk of 0.20 should ideally mean that approximately 20% of individuals receiving that prediction have diabetes, regardless of their demographic characteristics. We will investigate whether a globally calibrated model remains miscalibrated across specific groups and whether group-specific calibration methods can reduce these differences. 
+The aim of this project is to investigate whether machine learning models trained to predict diabetes risk are equally well-calibrated across different demographic groups. For example, a predicted risk of 0.20 should ideally mean that approximately 20% of individuals receiving that prediction have diabetes, regardless of their demographic characteristics. We will investigate whether a globally trained and calibrated model remains miscalibrated across specific groups and whether group-specific calibration models can reduce these differences. 
 
 ## Research Questions
-- Are globally calibrated models miscalibrated across demographic groups?
-- Does global calibration close these gaps, or do group-specific calibrators perform better?
-- Does improving calibration within individual groups come at the expense of overall performance?
+- Are global models miscalibrated across demographic groups?
+- Does calibrating global models close these gaps, or do group-specific calibrated models perform better?
+- Does improving calibration within individual group models come at the expense of overall performance?
+- Does demographic-specific training improve probability calibration across demographic groups, and does this improvement justify the reduction in training data?
 
 ## Dataset
 **CDC Diabetes Health Indicators** dataset, obtained from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/).
