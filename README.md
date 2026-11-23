@@ -1,8 +1,11 @@
+
 # Demographic-Wise Calibration of Diabetes Risk Predictions
 
 ## Overview
 
-The aim of this project is to investigate whether machine learning models trained to predict diabetes risk are equally well-calibrated across different demographic groups. For example, a predicted risk of 0.20 should ideally mean that approximately 20% of individuals receiving that prediction have diabetes, regardless of their demographic characteristics. We will investigate whether a globally trained and calibrated model remains miscalibrated across specific groups and whether group-specific calibration models can reduce these differences.
+The aim of this project is to investigate whether machine learning models trained to predict diabetes risk are equally well-calibrated across different demographic groups. For example, a predicted risk of 0.20 should ideally mean that approximately 20% of individuals receiving that prediction have diabetes, regardless of their demographic characteristics.
+
+We will investigate whether a globally trained and calibrated model remains miscalibrated across specific groups and whether group-specific calibration models can reduce these differences.
 
 ## Research Questions
 
@@ -13,11 +16,11 @@ The aim of this project is to investigate whether machine learning models traine
 
 ## Dataset
 
-**CDC Diabetes Health Indicators** dataset, obtained from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/).
+**CDC Diabetes Health Indicators** dataset, obtained from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators).
 
 ## Methods
 
-- Binary classifications w/ probability estimation
+- Binary classification with probability estimation
 - Global and group-specific model comparisons
 - Platt scaling
 - Isotonic regression
@@ -44,23 +47,33 @@ The aim of this project is to investigate whether machine learning models traine
 ### Installation
 
 1. Clone the repository
-2. Activate the virtual environment:
-   - **macOS/Linux:**
+
+2. Create a virtual environment:
+
+```bash
+python3.10 -m venv .venv
+```
+
+3. Activate the virtual environment:
+
+   **macOS/Linux:**
+
 ```bash
 source .venv/bin/activate
 ```
 
-   - **Windows (PowerShell);**
+   **Windows (PowerShell):**
 
 ```bash
 .venv\Scripts\Activate.ps1
 ```
-    
+
 4. Install the dependencies:
-   ```bash
-    python -m pip install --upgrade pip
-    python -m pip install -r requirements.txt
-   ```
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
 
 ## Team
 
